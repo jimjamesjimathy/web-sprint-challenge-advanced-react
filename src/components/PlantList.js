@@ -21,7 +21,6 @@ export default class PlantList extends Component {
         console.log(err)
       })
   }
-
   /*********  DON'T CHANGE ANYTHING IN THE RENDER FUNCTION *********/
   render() {
     return (
