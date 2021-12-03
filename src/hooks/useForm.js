@@ -14,7 +14,7 @@ const useForm = (initialValue) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        setShowSuccessMessage(true);
+        setShowSuccessMessage(!showSuccessMessage);
       };
     return [values, handleChanges, handleSubmit, showSuccessMessage, setShowSuccessMessage]
 }
