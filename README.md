@@ -117,9 +117,22 @@ test("displays plants in cart", () => {
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers below.
 
 1. What are the main differences between a stateful and a functional component?
+    - Functional Components  accept data and display them in some form, that they are mainly responsible for rendering UI.
+    - Stateful or Class Components implement both logic and state.
 
-2. When does a componentWillMount function be called? What about a componentWillUpdate?
+2. When does a componentWillMount function get called? What about a componentWillUpdate?
+    - The componentWillMount function is called before the component is rendered for the first time.
+    - The componentWillUpdate function is called right before the component renders and right after shouldComponentUpdate.
 
 3. Define stateful logic.
+    - Short answer: Stateful Logic is any code that uses the state.
+    - Ex: A button that when clicked by the user will change, say, a counter number that incremints by 1 each click. That click is updating the state of the counter each time.
 
 4. What are the three step of creating a successful test? What is done in each phase? 
+    - The Arrange step should handle inputs and targets:
+        if the test requires and special setting or condition they will all be handled at the start of the test.
+    - The Act step should focus on the target behavior:
+        this step will cover all of the main elements to be tested, such as, calling a method or interacting with a form.
+    - The Assert step should handle the expected outcomes: 
+        this step will handle the responses, good or bad, from the Act step.
+        this step will also determine if the test passes or fails.
