@@ -30,9 +30,9 @@ test("shows success message on submit with form details", () => {
         const zipField = screen.getByLabelText(/zip:/i);
             userEvent.type(zipField, '42069');
 
-        const button = screen.getByRole('button');
+        const button = screen.getByRole("button", { name: /checkout/i });
             userEvent.click(button);
             
-        const successMessage = screen.getByTestId('successMessage');
+        const successMessage = screen.getByText('You have ordered some plants! Woo-hoo!');
             expect(successMessage).toBeInTheDocument();
 });
